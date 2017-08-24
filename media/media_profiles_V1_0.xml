@@ -89,18 +89,6 @@
     <!-- Each camcorder profile defines a set of predefined configuration parameters -->
     <CamcorderProfiles cameraId="0">
 
-        <EncoderProfile quality="qvga" fileFormat="3gp" duration="60">
-            <Video codec="h264"
-                   bitRate="128000"
-                   width="320"
-                   height="240"
-                   frameRate="15" />
-            <Audio codec="amrnb"
-                   bitRate="12200"
-                   sampleRate="8000"
-                   channels="1" />
-        </EncoderProfile>
-
         <EncoderProfile quality="cif" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="1200000"
@@ -222,18 +210,6 @@
     </CamcorderProfiles>
 
     <CamcorderProfiles cameraId="1">
-
-        <EncoderProfile quality="qvga" fileFormat="3gp" duration="60">
-            <Video codec="h264"
-                   bitRate="128000"
-                   width="320"
-                   height="240"
-                   frameRate="15" />
-            <Audio codec="amrnb"
-                   bitRate="12200"
-                   sampleRate="8000"
-                   channels="1" />
-        </EncoderProfile>
 
         <EncoderProfile quality="cif" fileFormat="mp4" duration="30">
             <Video codec="h264"
