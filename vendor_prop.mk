@@ -96,7 +96,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.config.activelaunch_enable=true \
     sys.config.phone_start_early=true \
     sys.disable_ext_animation=1 \
-    ro.hardware.nfc_nci=nqx.default \
     persist.backup.ntpServer=0.pool.ntp.org \
     ro.vendor.extension_library=libqti-perfd-client.so \
     vendor.perf.iop_v3.enable=true \
