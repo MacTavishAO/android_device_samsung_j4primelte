@@ -36,6 +36,8 @@ TARGET_NO_BOOTLOADER := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-01
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
