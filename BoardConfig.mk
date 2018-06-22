@@ -16,6 +16,8 @@
 DEVICE_PATH := device/samsung/j4primelte
 BOARD_VENDOR := samsung
 
+BUILD_BROKEN_DUP_RULES := true
+
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Architecture
