@@ -138,6 +138,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
+# Device mapper verity
+PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/platform/soc/7824900.sdhci/by-name/system
+PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/platform/soc/7824900.sdhci/by-name/vendor
+$(call inherit-product, build/target/product/verity.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     AdvancedDisplay \
