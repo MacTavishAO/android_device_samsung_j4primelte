@@ -13,12 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-	
+    
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
@@ -39,6 +37,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
@@ -56,14 +55,14 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@4.0 \
     android.hardware.audio.effect@4.0-impl \
-    android.hardware.soundtrigger@2.1-impl
+	android.hardware.soundtrigger@2.2-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
     $(LOCAL_PATH)/audio/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     $(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_sec.xml \
@@ -133,15 +132,10 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
     camera.device@3.4-impl
-	
+    
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
-
-# Device mapper verity
-PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/platform/soc/7824900.sdhci/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/platform/soc/7824900.sdhci/by-name/vendor
-$(call inherit-product, build/target/product/verity.mk)
 
 # Display
 PRODUCT_PACKAGES += \
@@ -152,9 +146,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libdisplayconfig \
     libqdMetaData.system \
+    libqservice \
     libjni_livedisplay \
     libtinyxml
-	
+    
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
@@ -163,20 +158,20 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
-	
+    
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1-service.widevine \
-    android.hardware.drm@1.2-service.clearkey
-	
+    android.hardware.drm@1.1-service.clearkey
+    
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebt
-	
+    
 # Empty File
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/empty:$(TARGET_COPY_OUT_VENDOR)/etc/empty
@@ -193,7 +188,7 @@ PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
-	
+    
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -207,7 +202,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     $(LOCAL_PATH)/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
-	
+    
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-impl-qti \
@@ -217,7 +212,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
-	android.hidl.manager@1.0-java
+    android.hidl.manager@1.0-java
 
 # IPA Manager
 PRODUCT_PACKAGES += \
@@ -239,7 +234,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_rmi4_i2c.kl \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl
-	
+    
 # Keymaster HAL
 #PRODUCT_PACKAGES += \
 #    android.hardware.keymaster@3.0-impl \
@@ -266,7 +261,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_8956.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_8956.xml \
     $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
-	
+    
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -277,12 +272,12 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     vendor.nxp.hardware.nfc@1.1-service
-	
+    
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf
-	
+    
 # OMX
 PRODUCT_PACKAGES += \
     libmm-omxcore \
@@ -327,9 +322,6 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom
-
-PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
 
 # Properties
@@ -339,7 +331,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     $(LOCAL_PATH)/configs/public.libraries.txt.backup:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt.backup
-	
+    
 # QMI
 PRODUCT_PACKAGES += \
     libjson
@@ -376,14 +368,14 @@ PRODUCT_PACKAGES += \
     init.wifi.rc \
     fstab.qcom \
     ueventd.qcom.rc
-	
+    
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
-	
+    
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2-radio-service.samsung \
+    android.hardware.radio@1.3-radio-service.samsung \
     android.hardware.radio.config@1.0 \
     libjson \
     librmnetctl \
@@ -395,35 +387,33 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
-
+	
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/samsung/j4primelte
-
+    
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-	
+    
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-	
+    
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service
-
+    
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := false
+PRODUCT_SHIPPING_API_LEVEL := 27
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
-	
+    
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
@@ -446,7 +436,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-	vendor.qti.hardware.wifi.hostapd@1.0.vendor \
+    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.0.vendor
 
 PRODUCT_COPY_FILES += \
