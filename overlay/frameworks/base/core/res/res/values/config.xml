@@ -75,4 +75,7 @@
 
     <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Lawnstep -->
+    <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.ci/com.android.quickstep.RecentsActivity</string>
 </resources>

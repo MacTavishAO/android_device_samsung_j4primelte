@@ -24,3 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.multisim.config=dsds
+
+# Lawnchair
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.overlay.lawnconf
