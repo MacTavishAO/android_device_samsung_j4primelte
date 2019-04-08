@@ -22,6 +22,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from j4primelte device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := j4primelte
 PRODUCT_MANUFACTURER := samsung
