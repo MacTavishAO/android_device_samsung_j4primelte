@@ -92,6 +92,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Inherit from the proprietary version
 -include vendor/samsung/j4primelte/BoardConfigVendor.mk
