@@ -20,4 +20,4 @@
 
 ## Device Picture
 
-![Galaxy J4+](https://cdn3.epey.com/resim/128675/m_samsung-galaxy-j4plus-3.png "Galaxy J4+")
+![Galaxy J4+](https://smsoptimizedimages.azureedge.net/0017658_samsung-galaxy-j4-plus-16gb-siyah-sm-j415f_415.jpeg "Galaxy J4+")
