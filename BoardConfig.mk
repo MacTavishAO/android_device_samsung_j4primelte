@@ -31,6 +31,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno308
 TARGET_BOOTLOADER_BOARD_NAME := RG13A002KU
 TARGET_NO_BOOTLOADER := true
 
+# Audio
+USE_XML_AUDIO_POLICY_CONF := 1
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
