@@ -8,11 +8,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	sdm.debug.disable_skip_validate=1 \
 	sys.disable_ext_animation=1 \
 	debug.sdm.support_writeback=0 \
+	debug.hwui.renderer=opengl \
 	debug.hwui.use_buffer_age=false
 	
 # Little Optimisation
 PRODUCT_PROPERTY_OVERRIDES += \
-	dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-filter=speed \
     ro.vendor.qti.am.reschedule_service=true
 	
