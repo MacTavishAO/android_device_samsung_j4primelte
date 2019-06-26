@@ -31,5 +31,30 @@
         <item>wigig0</item>
         <item>wlan0</item>
     </string-array>
+	
+	<!-- Auto brightness values. -->
+	<integer-array name="config_autoBrightnessLevels">
+        <item>8</item>
+        <item>15</item>
+        <item>25</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1500</item>
+        <item>5000</item>
+        <item>20000</item>
+    </integer-array>
+	
+	<!-- Auto brightness LCD values. -->
+	<integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>6</item>
+        <item>19</item>
+        <item>38</item>
+        <item>55</item>
+        <item>95</item>
+        <item>142</item>
+        <item>185</item>
+        <item>255</item>
+        <item>256</item>
+    </integer-array>
 
 </resources>
