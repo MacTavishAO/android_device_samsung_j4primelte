@@ -92,5 +92,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# USB HIDL-HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.j4primelte
+
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk

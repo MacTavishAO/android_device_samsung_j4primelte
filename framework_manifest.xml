@@ -19,6 +19,15 @@
         </interface>
         <fqname>@1.0::IUCMKeystore/default</fqname>
     </hal>
+	<hal format="hidl">
+        <name>android.hardware.usb</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUsb</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <system-sdk>
         <version>28</version>
     </system-sdk>
