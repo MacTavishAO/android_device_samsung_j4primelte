@@ -20,3 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LCD Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=260
+
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.radio.multisim.config=dsds
