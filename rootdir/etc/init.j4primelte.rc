@@ -1,0 +1,2 @@
+on init
+	mount none /system/etc/mixer_paths.xml /vendor/etc/mixer_paths.xml bind

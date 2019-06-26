@@ -43,6 +43,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     tinymix
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/mixer_paths.xml:system/etc/mixer_paths.xml
 	
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -73,6 +76,10 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson	
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.j4primelte.rc
 
 # Telephony
 PRODUCT_PACKAGES += \
