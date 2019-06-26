@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system \
     libvulkan
+
+# Empty file
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/empty:system/etc/empty
 	
 # Keylayouts
 PRODUCT_COPY_FILES += \

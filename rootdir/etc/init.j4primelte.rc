@@ -1,2 +1,4 @@
 on init
 	mount none /system/etc/mixer_paths.xml /vendor/etc/mixer_paths.xml bind
+	mount none /system/etc/empty /vendor/lib/hw/keystore.mdfpp.so bind
+	mount none /system/etc/empty /vendor/lib/hw/keystore.msm8937.so bind
