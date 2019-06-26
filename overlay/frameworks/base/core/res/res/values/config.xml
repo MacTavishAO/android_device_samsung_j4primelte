@@ -25,5 +25,11 @@
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
+	
+	<!-- If it's empty hotspot option in settings will disappear. -->
+	<string-array name="config_tether_wifi_regexs">
+        <item>wigig0</item>
+        <item>wlan0</item>
+    </string-array>
 
 </resources>
