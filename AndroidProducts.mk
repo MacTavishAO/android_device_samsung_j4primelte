@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_j4primelte.mk
+    $(LOCAL_DIR)/aosp_j4primelte.mk
