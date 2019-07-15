@@ -1,3 +1,6 @@
 on init
 	mount none /vendor/etc/empty /vendor/lib/hw/keystore.mdfpp.so bind
 	mount none /vendor/etc/empty /vendor/lib/hw/keystore.msm8937.so bind 
+
+on boot
+	write /sys/module/g_android/parameters/mtp_tx_req_len 16384
