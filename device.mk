@@ -72,11 +72,7 @@ PRODUCT_COPY_FILES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
-# Lineage LiveDisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
-
+	
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
