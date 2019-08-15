@@ -8,7 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	sdm.debug.disable_skip_validate=1 \
 	sys.disable_ext_animation=1 \
 	debug.sdm.support_writeback=0 \
-	debug.hwui.renderer=skiagl \
+	debug.hwui.renderer=opengl \
 	debug.hwui.use_buffer_age=false
 	
 # Little Optimisation
