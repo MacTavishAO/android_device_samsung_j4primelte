@@ -25,7 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 	
 # Device screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
