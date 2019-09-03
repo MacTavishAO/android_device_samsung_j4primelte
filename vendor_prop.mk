@@ -128,3 +128,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.is_type=1 \
     vendor.vidc.enc.narrow.searchrange=1 \
     persist.vendor.qti.telephony.vt_cam_interface=1
+    persist.bluetooth.bluetooth_audio_hal.disabled=true
