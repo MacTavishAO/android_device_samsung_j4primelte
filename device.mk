@@ -409,7 +409,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service
-	
+
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := false
+PRODUCT_SHIPPING_API_LEVEL := 27
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
