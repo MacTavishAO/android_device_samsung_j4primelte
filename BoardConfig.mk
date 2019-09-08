@@ -105,6 +105,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := config omr
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/libsec-ril.so|libshims_ril.so \
+    /system/vendor/lib64/libsec-ril-dsds.so|libshims_ril.so
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current

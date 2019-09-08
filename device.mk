@@ -186,7 +186,8 @@ PRODUCT_PACKAGES += \
     libjson \
     librmnetctl \
     libxml2 \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    libshims_ril
 
 # Seccomp
 PRODUCT_COPY_FILES += \
