@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -412,7 +414,6 @@ PRODUCT_PACKAGES += \
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := false
-PRODUCT_SHIPPING_API_LEVEL := 27
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # USB HAL
