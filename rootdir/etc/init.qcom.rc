@@ -1186,3 +1186,11 @@ on property:ro.multisim.simslotcount=1
 
 on property:ro.multisim.simslotcount=2
     setprop persist.radio.multisim.config dsds
+
+service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
+    override
+    class hal
+    user system
+    group system input wakelock
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10
