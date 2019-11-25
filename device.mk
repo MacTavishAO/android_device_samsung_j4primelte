@@ -92,6 +92,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
+# Display
+PRODUCT_PACKAGES += \
+    copybit.msm8937 \
+    gralloc.msm8937 \
+    hwcomposer.msm8937 \
+    memtrack.msm8937 \
+    liboverlay \
+    libdisplayconfig \
+    libqdMetaData.system \
+    libjni_livedisplay \
+    libtinyxml
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
