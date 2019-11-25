@@ -118,5 +118,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.disable_skip_validate=1 \
 	debug.hwui.renderer=opengl \
 	ro.sf.lcd_density=260 \
+	persist.radio.multisim.config=dsds \
     dev.usbsetting.embedded=on
 
