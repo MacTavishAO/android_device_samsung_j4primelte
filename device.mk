@@ -352,13 +352,15 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-# WiFi
+# Wifi
 PRODUCT_PACKAGES += \
+    libcld80211 \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
     libwpa_client \
-    wcnss_service
-
-PRODUCT_PACKAGES += \
     hostapd \
+    dhcpcd.conf \
+    wificond \
     wpa_supplicant \
     wpa_supplicant.conf
 
