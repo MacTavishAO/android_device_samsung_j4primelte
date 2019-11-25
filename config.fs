@@ -205,6 +205,12 @@ user: AID_ROOT
 group: AID_SYSTEM
 caps: 0
 
+[vendor/firmware-modem/image/*]
+mode: 0771
+user: AID_ROOT
+group: AID_SYSTEM
+caps: 0
+
 [bt_firmware/]
 mode: 0771
 user: AID_SYSTEM
