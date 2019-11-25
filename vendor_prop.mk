@@ -116,4 +116,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.sec.rild.libpath=/vendor/lib/libsec-ril.so \
     sys.vendor.shutdown.waittime=500 \
     sdm.debug.disable_skip_validate=1 \
-    dev.usbsetting.embedded=on \
+    dev.usbsetting.embedded=on
