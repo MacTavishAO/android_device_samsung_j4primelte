@@ -151,6 +151,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # Lights
 TARGET_PROVIDES_LIBLIGHT=true
 
+# Power
+TARGET_USES_NON_LEGACY_POWERHAL := true
+
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
