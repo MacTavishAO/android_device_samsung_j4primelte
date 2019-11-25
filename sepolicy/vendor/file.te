@@ -33,6 +33,9 @@ type proc_swappiness, fs_type, proc_type;
 # rootfs
 type omr_file, file_type, mlstrustedobject;
 
+# Root Symlinks
+type avb_file, file_type;
+
 # sysfs
 type sysfs_audio_writable, fs_type, sysfs_type;
 type sysfs_camera_writable, fs_type, sysfs_type;

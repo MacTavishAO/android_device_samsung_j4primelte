@@ -165,7 +165,7 @@ BOARD_ROOT_EXTRA_FOLDERS := config omr efs
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Shims
