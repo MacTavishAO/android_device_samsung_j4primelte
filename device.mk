@@ -157,10 +157,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
 	android.hidl.manager@1.0-java
 
-# Health HAL
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service
-
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
