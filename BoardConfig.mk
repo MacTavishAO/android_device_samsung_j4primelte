@@ -1,6 +1,21 @@
 DEVICE_PATH := device/samsung/j4primelte
 BOARD_VENDOR := samsung
 
+# Architecture
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := cortex-a53
+
+# Platform
+TARGET_BOARD_PLATFORM := msm8937
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno308
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := RG13A002KU
+TARGET_NO_BOOTLOADER := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-01
 
