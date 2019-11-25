@@ -32,6 +32,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8917
 TARGET_KERNEL_CONFIG := j4primelte_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
