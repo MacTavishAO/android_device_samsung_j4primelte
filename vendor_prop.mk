@@ -117,5 +117,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500 \
     sdm.debug.disable_skip_validate=1 \
 	debug.hwui.renderer=opengl \
+	ro.sf.lcd_density=260 \
     dev.usbsetting.embedded=on
 
