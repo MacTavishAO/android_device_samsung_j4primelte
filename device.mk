@@ -155,6 +155,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.base@1.0
+	
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
 
 # IRQ
 PRODUCT_COPY_FILES += \
