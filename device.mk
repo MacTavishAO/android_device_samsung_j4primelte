@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
