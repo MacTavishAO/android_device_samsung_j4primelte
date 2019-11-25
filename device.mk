@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
     camera.device@3.4-impl
+	
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service
 
 # FM
 PRODUCT_PACKAGES += \
