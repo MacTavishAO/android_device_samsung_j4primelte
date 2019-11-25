@@ -149,6 +149,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/vendor/etc/carrier/VZW/permissions/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor/etc/carrier/VZW/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/vendor/etc/carrier/XAS/permissions/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor/etc/carrier/XAS/permissions/android.hardware.telephony.cdma.xml \
 
+# Power
+PRODUCT_PACKAGES += \
+    power.qcom
+
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
