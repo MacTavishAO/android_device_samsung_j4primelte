@@ -119,5 +119,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.renderer=opengl \
 	ro.sf.lcd_density=260 \
 	persist.radio.multisim.config=dsds \
-    dev.usbsetting.embedded=on
-
+    dev.usbsetting.embedded=on \
+	rild.libargs=-d /dev/umts_ipc0 \
+    debug.egl.hw=0 \
+    debug.gralloc.enable_fb_ubwc=1 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.hw=0 \
+    debug.sf.latch_unsignaled=1
