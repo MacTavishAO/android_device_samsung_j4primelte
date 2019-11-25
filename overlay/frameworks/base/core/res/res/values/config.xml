@@ -393,17 +393,6 @@
         <item>700</item>
     </array>
     <array name="config_autoBrightnessKeyboardBacklightValues" />
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>6</item>
-        <item>19</item>
-        <item>38</item>
-        <item>55</item>
-        <item>95</item>
-        <item>142</item>
-        <item>185</item>
-        <item>255</item>
-        <item>256</item>
-    </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
          in the config_autoBrightnessLevels array.  This array should have size one greater
