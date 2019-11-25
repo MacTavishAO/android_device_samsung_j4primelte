@@ -123,6 +123,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := config omr
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libsec-ril.so|libshims_ril.so \
