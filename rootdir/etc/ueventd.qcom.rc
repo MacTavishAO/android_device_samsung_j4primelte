@@ -30,6 +30,14 @@
 # be added to search path for firmware loading
 firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware-modem/image/
 
+subsystem adsp
+    devname uevent_devpath
+    dirname /dev/adsp
+
+subsystem msm_camera
+    devname uevent_devpath
+    dirname /dev/msm_camera
+
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
 
@@ -184,6 +192,7 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware-modem/image/
 /dev/wcd_dsp0_control     0660   system     audio
 /dev/wcd-dsp-glink        0660   system     audio
 /dev/audio_slimslave      0660   system     audio
+/dev/adsp/*               0660   system     audio
 /dev/msm_qcelp            0660   system     audio
 /dev/msm_evrc             0660   system     audio
 /dev/msm_wma              0660   system     audio
