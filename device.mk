@@ -145,6 +145,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     $(LOCAL_PATH)/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+	
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-impl-qti \
+    android.hardware.gnss@1.0-service-qti
 
 # HIDL
 PRODUCT_PACKAGES += \
