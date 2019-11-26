@@ -58,8 +58,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.mediacodec.binder.size=4 \
     vendor.vidc.disable.split.mode=1 \
-    import \
-    /efs/factory.prop \
     keyguard.no_require_sim=true \
     persist.hwc.enable_vds=1 \
     persist.sys.strictmode.disable=true \
