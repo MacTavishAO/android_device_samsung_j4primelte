@@ -120,6 +120,11 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware \
+    /mnt/vendor/persist:/persist
+
 # Graphics
 BOARD_USES_ADRENO := true
 
