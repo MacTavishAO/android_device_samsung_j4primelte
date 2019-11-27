@@ -273,7 +273,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service
 
 # Properties
--include device/xiaomi/rolex/vendor_prop.mk
+-include device/samsung/j4primelte/vendor_prop.mk
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -334,6 +334,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
+	
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
 	
 # Telephony
 PRODUCT_PACKAGES += \
