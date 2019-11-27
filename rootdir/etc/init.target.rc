@@ -110,6 +110,58 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
+	
+# Fix Camera Permissions
+	chown camera radio /sys/class/camera/rear/rear_afcal
+	chown camera radio /sys/class/camera/rear/rear_camfw
+    chown camera radio /sys/class/camera/rear/rear_checkfw_user
+    chown camera radio /sys/class/camera/rear/rear_checkfw_factory
+    chown camera radio /sys/class/camera/rear/rear_camfw_full
+    chown camera radio /sys/class/camera/rear/rear_camfw_load
+    chown camera radio /sys/class/camera/rear/rear_camtype
+    chown camera radio /sys/class/camera/rear/rear_calcheck
+    chown camera radio /sys/class/camera/rear/rear_fwcheck
+    chown camera radio /sys/class/camera/rear/rear_moduleid
+    chown camera radio /sys/class/camera/rear/rear_mtf_exif
+    chown camera radio /sys/class/camera/rear/rear_sensorid_exif
+    chown camera radio /sys/class/camera/rear/rear2_moduleid
+    chown camera radio /sys/class/camera/rear/rear2_sensorid_exif
+    chown camera radio /sys/class/camera/rear/isp_core
+    chown camera radio /sys/class/camera/flash/rear_flash
+    chown camera radio /sys/class/camera/flash/front_flash
+    chown camera radio /sys/class/camera/front/front_camfw
+    chown camera radio /sys/class/camera/front/front_camfw_full
+    chown camera radio /sys/class/camera/front/front_camtype
+    chown camera radio /sys/class/camera/front/front_checkfw_factory
+    chown camera radio /sys/class/camera/front/front_checkfw_user
+    chown camera radio /sys/class/camera/front/front_moduleid
+    chown camera radio /sys/class/camera/front/front_mtf_exif
+    chown camera radio /sys/class/camera/front/front_sensorid_exif
+    chmod 0666 /sys/class/camera/rear/rear_afcal
+    chmod 0666 /sys/class/camera/rear/rear_camfw
+    chmod 0666 /sys/class/camera/rear/rear_checkfw_user
+    chmod 0666 /sys/class/camera/rear/rear_checkfw_factory
+    chmod 0666 /sys/class/camera/rear/rear_camfw_full
+    chmod 0666 /sys/class/camera/rear/rear_camfw_load
+    chmod 0666 /sys/class/camera/rear/rear_camtype
+    chmod 0666 /sys/class/camera/rear/rear_calcheck
+    chmod 0666 /sys/class/camera/rear/rear_fwcheck
+    chmod 0666 /sys/class/camera/rear/rear_moduleid
+    chmod 0666 /sys/class/camera/rear/rear_mtf_exif
+    chmod 0666 /sys/class/camera/rear/rear_sensorid_exif
+    chmod 0666 /sys/class/camera/rear/rear2_moduleid
+    chmod 0666 /sys/class/camera/rear/rear2_sensorid_exif
+    chmod 0666 /sys/class/camera/rear/isp_core
+    chmod 0666 /sys/class/camera/flash/front_flash
+    chmod 0666 /sys/class/camera/flash/rear_flash
+    chmod 0666 /sys/class/camera/front/front_camfw
+    chmod 0666 /sys/class/camera/front/front_camfw_full
+    chmod 0666 /sys/class/camera/front/front_camtype
+    chmod 0666 /sys/class/camera/front/front_checkfw_factory
+    chmod 0666 /sys/class/camera/front/front_checkfw_user
+    chmod 0666 /sys/class/camera/front/front_moduleid
+    chmod 0666 /sys/class/camera/front/front_mtf_exif
+    chmod 0666 /sys/class/camera/front/front_sensorid_exif
 
 on init
    write /dev/stune/top-app/schedtune.colocate 1
