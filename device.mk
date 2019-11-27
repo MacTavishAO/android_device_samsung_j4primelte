@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebt
+	
+# Empty File
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/empty:$(TARGET_COPY_OUT_VENDOR)/etc/empty
 
 # FM
 PRODUCT_PACKAGES += \
