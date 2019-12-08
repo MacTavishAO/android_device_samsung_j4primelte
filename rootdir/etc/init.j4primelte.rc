@@ -5,41 +5,25 @@ on init
 on early-init
 # Detect device variant and dual sim support
 on property:ro.boot.product.model=SM-J415F
-	setprop ro.product.model SM-J415F
-	setprop ro.vendor.product.model SM-J415F
 	setprop persist.radio.multisim.config ssss
 
 on property:ro.boot.product.model=SM-J415F/DS
-	setprop ro.product.model SM-J415F/DS
-	setprop ro.vendor.product.model SM-J415F/DS
 	setprop persist.radio.multisim.config dsds
 
 on property:ro.boot.product.model=SM-J415FN
-	setprop ro.product.model SM-J415FN
-	setprop ro.vendor.product.model SM-J415FN
 	setprop persist.radio.multisim.config ssss
 
 on property:ro.boot.product.model=SM-J415FN/DS
-	setprop ro.product.model SM-J415FN/DS
-	setprop ro.vendor.product.model SM-J415FN/DS
 	setprop persist.radio.multisim.config dsds
 
 on property:ro.boot.product.model=SM-J415G
-	setprop ro.product.model SM-J415G
-	setprop ro.vendor.product.model SM-J415G
 	setprop persist.radio.multisim.config ssss
 
 on property:ro.boot.product.model=SM-J415G/DS
-	setprop ro.product.model SM-J415G/DS
-	setprop ro.vendor.product.model SM-J415G/DS
 	setprop persist.radio.multisim.config dsds
 
 on property:ro.boot.product.model=SM-J415GN
-	setprop ro.product.model SM-J415GN
-	setprop ro.vendor.product.model SM-J415GN
 	setprop persist.radio.multisim.config ssss
 
 on property:ro.boot.product.model=SM-J415GN/DS
-	setprop ro.product.model SM-J415FN/GS
-	setprop ro.vendor.product.model SM-J415GN/DS
 	setprop persist.radio.multisim.config dsds
