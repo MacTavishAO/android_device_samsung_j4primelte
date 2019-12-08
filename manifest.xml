@@ -409,14 +409,14 @@
         <fqname>@1.0::IDisplayPostproc/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
+        <name>vendor.nxp.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
-            <name>INxpNfc</name>
+            <name>INqNfc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::INxpNfc/default</fqname>
+        <fqname>@1.0::INqNfc/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.data.factory</name>
