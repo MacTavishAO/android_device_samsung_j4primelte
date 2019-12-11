@@ -107,6 +107,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+
 # Fingerprint
 TARGET_SEC_FP_HAL_VARIANT := bauth
 
