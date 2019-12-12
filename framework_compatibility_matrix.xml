@@ -64,7 +64,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.power</name>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
