@@ -1,0 +1,2 @@
+# Import EFS Properities
+import /efs/factory.prop

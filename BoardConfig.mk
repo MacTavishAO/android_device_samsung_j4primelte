@@ -16,6 +16,8 @@
 DEVICE_PATH := device/samsung/j4primelte
 BOARD_VENDOR := samsung
 
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
