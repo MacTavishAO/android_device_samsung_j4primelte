@@ -156,7 +156,7 @@ BOARD_USES_QCOM_HARDWARE := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Root
-BOARD_ROOT_EXTRA_FOLDERS := config omr
+BOARD_ROOT_EXTRA_FOLDERS := config omr efs
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
