@@ -1,3 +1,4 @@
 on init
 	mount none /vendor/etc/empty /vendor/lib/hw/keystore.mdfpp.so bind
 	mount none /vendor/etc/empty /vendor/lib/hw/keystore.msm8937.so bind
+	mount none /vendor/etc/empty /odm/app/SamsungMax/SamsungMax.apk bind
