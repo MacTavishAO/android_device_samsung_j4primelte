@@ -148,9 +148,6 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # Lights
 TARGET_PROVIDES_LIBLIGHT=true
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
