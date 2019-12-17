@@ -45,7 +45,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8917
-TARGET_KERNEL_CONFIG := j4primelte_defconfig
+TARGET_KERNEL_CONFIG := sec8917_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # FM
