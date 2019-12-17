@@ -1,0 +1,573 @@
+<!--
+  Copyright (c) 2017 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+CommonChromatixInfo:
+	CommonChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are common for all sensor modes.
+
+ResolutionChromatixInfo:
+	ResolutionChromatixInfo is the information about chromatix needed for
+		various use cases.
+	Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+		3A and SW PostProc.
+	Entries in this node are specific to sensor resolution.
+
+ChromatixName:
+	Contains the list of chromatix names for all modules.
+	special_mode_mask:
+		It is the bit mask for special modes, which is used for
+			chromatix selection.
+		Special modes can be any mode that needs a special chromatix.
+		Ex:- scene mode, DZOOM mode, OIS capture mode, flash mode
+		This is applicable for CommonChromatixInfo and
+			ResolutionChromatixInfo.
+		special_mode_mask="0" means none of the special modes are
+			selected.
+	sensor_resolution_index:
+		It is the sensor resolution index for which chromatix libraries
+			will be choosen.
+		It is applicable only in ResolutionChromatixInfo.
+
+ISPCommon :
+	Common tuning library name for ISP
+ISPPreview :
+	Preview tuning library name for ISP
+ISPSnapshot :
+	Snapshot tuning library name for ISP
+CPPCommon :
+	Common tuning library name for CPP
+CPPPreview :
+	Preview tuning library name for CPP
+CPPSnapshot :
+	Snapshot tuning library name for CPP
+CPPLiveshot :
+	Liveshot tuning library name for CPP
+PostProc :
+	Tuning library name for postproc module
+A3Preview :
+	Preview tuning library for 3A
+A3Video :
+	Video tuning library for 3A
+
+Order of Resolution Pick:
+	Assume the current sensor mode is "r" and special mode mask is "s".
+	Chromatix for a module and type is choosen in this order till we find a
+		valid chroamtix file name or else NULL is returned.
+	1) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "s".
+	2) From CommonChromatixInfo node for which special_mode_mask is "s".
+	3) From ResolutionChromatixInfo node for which sensor_resolution_index
+		is "r" and special_mode_mask is "0".
+	4) From CommonChromatixInfo node for which special_mode_mask is "0".
+	5) NULL is returned if we dont find in any of the above cases.
+
+special_mode_mask values:
+	SENSOR_SPECIAL_MODE_NONE = 0,
+	SENSOR_SPECIAL_MODE_FLASH = 1,
+	SENSOR_SPECIAL_MODE_ZOOM_UPSCALE = 2,
+	SENSOR_SPECIAL_MODE_ZOOM_DOWNSCALE = 4,
+	SENSOR_SPECIAL_MODE_OIS_CAPTURE = 8,
+-->
+
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_snapshot_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_snapshot_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_snapshot_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_zsl_preview_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ISO_100">
+      <ISPPreview>s5k3l6xx_mode_iso_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_iso_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_iso_isp</ISPVideo>
+      <CPPSnapshot>s5k3l6xx_mode_iso_cpp</CPPSnapshot>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ISO_200">
+      <ISPPreview>s5k3l6xx_mode_iso_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_iso_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_iso_isp</ISPVideo>
+      <CPPSnapshot>s5k3l6xx_mode_iso_cpp</CPPSnapshot>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ISO_400">
+      <ISPPreview>s5k3l6xx_mode_iso_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_iso_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_iso_isp</ISPVideo>
+      <CPPSnapshot>s5k3l6xx_mode_iso_cpp</CPPSnapshot>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ISO_800">
+      <ISPPreview>s5k3l6xx_mode_iso_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_iso_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_iso_isp</ISPVideo>
+      <CPPSnapshot>s5k3l6xx_mode_iso_cpp</CPPSnapshot>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="LLS_CAPTURE">
+      <CPPSnapshot>s5k3l6xx_mode_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="MOTION_LLS_CAPTURE">
+      <CPPSnapshot>s5k3l6xx_mode_motion_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="OIS_CAPTURE">
+      <CPPSnapshot>s5k3l6xx_mode_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="LLS_CAPTURE,HDR_AUTO">
+      <CPPSnapshot>s5k3l6xx_mode_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="MOTION_LLS_CAPTURE,HDR_AUTO">
+      <CPPSnapshot>s5k3l6xx_mode_motion_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="OIS_CAPTURE,HDR_AUTO">
+      <CPPSnapshot>s5k3l6xx_mode_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="LLS_CAPTURE,HDR">
+      <CPPSnapshot>s5k3l6xx_mode_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="MOTION_LLS_CAPTURE,HDR">
+      <CPPSnapshot>s5k3l6xx_mode_motion_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="OIS_CAPTURE,HDR">
+      <CPPSnapshot>s5k3l6xx_mode_lls_cpp</CPPSnapshot>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <!--Auto res0 4:3-->
+    <ChromatixName sensor_resolution_index="0">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_snapshot_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_snapshot_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_snapshot_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_zsl_preview_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--VideoRecording-->
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="VIDEORECORDING">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>	
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="VIDEORECORDING_15FPS,DIM_VGA">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_15fps_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_15fps_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="VIDEORECORDING,DIM_VGA">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Panorama-->
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="PANORAMA">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_panorama_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_panorama_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_panorama_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_panorama_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_panorama_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_panorama_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_panorama_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Night-->
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="NIGHT_SCENE">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_night_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_night_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_night_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_night_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_night_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_night_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_night_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Sports-->
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="SPORTS_SCENE">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_sports_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_sports_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_sports_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_sports_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_sports_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_sports_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_sports_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--HDR Auto-->    
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="HDR_AUTO">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_hdr_auto_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_hdr_auto_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_hdr_auto_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_hdr_auto_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName> 
+    <!--HDR On-->    
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="HDR">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_hdr_on_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_hdr_on_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_hdr_on_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_hdr_on_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName> 
+    <!--Auto res1 16:9-->	
+    <ChromatixName sensor_resolution_index="1">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_snapshot_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_snapshot_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_snapshot_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_4k_preview_3a</A3Preview>
+      <A3Video>s5k3l6xx_4k_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--VideoRecording-->
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="VIDEORECORDING">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="VIDEORECORDING,DIM_720P">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="VIDEORECORDING,DIM_1080P">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+	<ChromatixName sensor_resolution_index="1" special_mode_mask="VIDEORECORDING,DIM_UHD">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Panorama-->
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="PANORAMA">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_panorama_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_panorama_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_panorama_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_panorama_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_panorama_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_panorama_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_panorama_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Night-->
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="NIGHT_SCENE">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_night_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_night_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_night_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_night_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_night_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_night_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_night_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Sports-->
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="SPORTS_SCENE">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_sports_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_sports_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_sports_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_sports_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_sports_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_sports_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_sports_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--HDR Auto-->    
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="HDR_AUTO">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_hdr_auto_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_hdr_auto_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_hdr_auto_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_hdr_auto_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>  
+    <!--HDR On-->    
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="HDR">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_hdr_on_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_hdr_on_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_hdr_on_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_hdr_on_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>   
+    <!--FastAEC-->
+    <ChromatixName sensor_resolution_index="2">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_hfr_120_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_hfr_120_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_hfr_120_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_hfr_120_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_hfr_120_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_hfr_120_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_hfr_120_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_hfr_120_3a</A3Preview>
+      <A3Video>s5k3l6xx_hfr_120_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--BOKEH-->
+    <ChromatixName sensor_resolution_index="3" special_mode_mask="BOKEH">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_outfocus_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_outfocus_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_outfocus_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_outfocus_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_outfocus_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_mode_outfocus_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_mode_outfocus_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_outfocus_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_outfocus_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+	
+    <!--Auto res5 18.5:9 -->	
+    <ChromatixName sensor_resolution_index="5">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_snapshot_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_snapshot_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_snapshot_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_4k_preview_3a</A3Preview>
+      <A3Video>s5k3l6xx_4k_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--VideoRecording-->
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="VIDEORECORDING">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="VIDEORECORDING,DIM_720P">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="VIDEORECORDING,DIM_1080P">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="VIDEORECORDING,DIM_UHD">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_video_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_video_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_video_4k_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_video_4k_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_zsl_video_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Panorama-->
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="PANORAMA">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_panorama_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_panorama_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_panorama_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_panorama_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_panorama_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_panorama_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_panorama_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Night-->
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="NIGHT_SCENE">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_night_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_night_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_night_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_night_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_night_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_night_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_night_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--Sports-->
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="SPORTS_SCENE">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_sports_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_sports_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_mode_sports_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_mode_sports_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_sports_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_4k_cpp</CPPVideo>
+      <A3Preview>s5k3l6xx_mode_sports_3a</A3Preview>
+      <A3Video>s5k3l6xx_mode_sports_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!--HDR Auto-->    
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="HDR_AUTO">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_hdr_auto_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_hdr_auto_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_hdr_auto_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_hdr_auto_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>  
+    <!--HDR On-->    
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="HDR">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_mode_hdr_on_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_mode_hdr_on_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_mode_hdr_on_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_mode_hdr_on_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>
+    <!-- VT 24fps binning -->
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="VT_24FPS">
+      <ISPCommon>s5k3l6xx_common</ISPCommon>
+      <ISPPreview>s5k3l6xx_snapshot_isp</ISPPreview>
+      <ISPSnapshot>s5k3l6xx_snapshot_isp</ISPSnapshot>
+      <ISPVideo>s5k3l6xx_video_isp</ISPVideo>
+      <CPPPreview>s5k3l6xx_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5k3l6xx_snapshot_cpp</CPPSnapshot>
+      <CPPVideo>s5k3l6xx_video_cpp</CPPVideo>
+      <CPPLiveshot>s5k3l6xx_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5k3l6xx_vt_24fps_non_gyro_3a</A3Preview>
+      <A3Video>s5k3l6xx_zsl_video_non_gyro_3a</A3Video>
+      <PostProc>s5k3l6xx_sw_post_proc</PostProc>
+    </ChromatixName>	
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>
