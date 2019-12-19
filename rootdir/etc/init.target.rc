@@ -110,7 +110,20 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     class main
     user camera
     group camera system inet input graphics
+    disabled
 	
+service qcamerasvr-j6 /system/vendor/bin/mm-qcamera-daemon-j6
+    class main
+    user camera
+    group camera system inet input graphics
+    disabled
+
+on property:device.has.j6pcam=true
+    start qcamerasvr-j6
+
+on property:device.has.j4pcam=true
+    start qcamerasvr
+
 # Fix Camera Permissions
 	chown camera radio /sys/class/camera/rear/rear_afcal
 	chown camera radio /sys/class/camera/rear/rear_camfw

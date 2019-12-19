@@ -6,15 +6,19 @@ on init
 
 on property:ro.boot.product.model=SM-J415F
 	setprop device.no.fingerprint true
+	setprop device.has.j4pcam true
 
 on property:ro.boot.product.model=SM-J415G
 	setprop device.no.fingerprint true
+	setprop device.has.j4pcam true
 
 on property:ro.boot.product.model=SM-J610F
 	setprop ro.hardware.sensors j6primelte
+	setprop device.has.j6pcam true
 
 on property:ro.boot.product.model=SM-J610G
 	setprop ro.hardware.sensors j6primelte
+	setprop device.has.j6pcam true
 
 on property:device.no.fingerprint=true
 	mount none /vendor/etc/empty /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.samsung bind
