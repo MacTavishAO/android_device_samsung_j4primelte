@@ -11,13 +11,9 @@ on property:ro.boot.product.model=SM-J415G
 	setprop device.no.fingerprint true
 
 on property:ro.boot.product.model=SM-J610F
-	setprop ro.product.model "Galaxy J6+"
-	setprop ro.product.vendor.model "Galaxy J6+"
 	setprop ro.hardware.sensors j6primelte
 
 on property:ro.boot.product.model=SM-J610G
-	setprop ro.product.model "Galaxy J6+"
-	setprop ro.product.vendor.model "Galaxy J6+"
 	setprop ro.hardware.sensors j6primelte
 
 on property:device.no.fingerprint=true
