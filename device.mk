@@ -175,8 +175,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/empty:$(TARGET_COPY_OUT_VENDOR)/etc/empty
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    fingerprint.msm8937
+#PRODUCT_PACKAGES += \
+#    fingerprint.msm8937
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.samsung
