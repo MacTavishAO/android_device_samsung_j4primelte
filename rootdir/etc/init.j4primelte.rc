@@ -8,7 +8,15 @@ on property:ro.boot.product.model=SM-J415F
 	setprop device.no.fingerprint true
 	setprop device.has.j4pcam true
 
+on property:ro.boot.product.model=SM-J415FN
+	setprop device.no.fingerprint true
+	setprop device.has.j4pcam true
+
 on property:ro.boot.product.model=SM-J415G
+	setprop device.no.fingerprint true
+	setprop device.has.j4pcam true
+
+on property:ro.boot.product.model=SM-J415GN
 	setprop device.no.fingerprint true
 	setprop device.has.j4pcam true
 
@@ -16,7 +24,15 @@ on property:ro.boot.product.model=SM-J610F
 	setprop ro.hardware.sensors j6primelte
 	setprop device.has.j6pcam true
 
+on property:ro.boot.product.model=SM-J610FN
+	setprop ro.hardware.sensors j6primelte
+	setprop device.has.j6pcam true
+
 on property:ro.boot.product.model=SM-J610G
+	setprop ro.hardware.sensors j6primelte
+	setprop device.has.j6pcam true
+
+on property:ro.boot.product.model=SM-J610GN
 	setprop ro.hardware.sensors j6primelte
 	setprop device.has.j6pcam true
 
