@@ -822,25 +822,14 @@
         </interface>
         <fqname>@1.0::Iwvkprov_server/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.trustonic.tee</name>
+	<hal format="hidl">
+        <name>vendor.samsung.security.skeymaster</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>3.0</version>
         <interface>
-            <name>ITee</name>
+            <name>ISKeymasterDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ITee/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.trustonic.teeregistry</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITeeRegistry</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITeeRegistry/default</fqname>
     </hal>
     <sepolicy>
         <version>28.0</version>
