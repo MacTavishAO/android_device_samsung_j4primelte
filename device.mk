@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libdisplayconfig \
     libqdMetaData.system \
+    libqservice \
     libjni_livedisplay \
     libtinyxml
     
