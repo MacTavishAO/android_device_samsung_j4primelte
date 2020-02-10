@@ -18,6 +18,5 @@ cc_binary {
         "android.hardware.radio@1.1",
         "android.hardware.radio@1.2",
         "vendor.samsung.hardware.radio@1.2",
-        "android.hidl.safe_union@1.0",
     ],
 }
