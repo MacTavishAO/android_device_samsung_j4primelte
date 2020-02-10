@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <android/hardware/radio/1.3/IRadio.h>
+#include <android/hardware/radio/1.2/IRadio.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <vendor/samsung/hardware/radio/1.2/IRadio.h>
@@ -27,7 +27,7 @@
 namespace android {
 namespace hardware {
 namespace radio {
-namespace V1_3 {
+namespace V1_2 {
 namespace implementation {
 
 #define RIL1_SERVICE_NAME "slot1"
@@ -288,7 +288,7 @@ struct Radio : public IRadio {
         int32_t serial, int32_t cid,
         ::android::hardware::radio::V1_2::DataRequestReason reason) override;
 
-    // Methods from ::android::hardware::radio::V1_3::IRadio follow.
+    // Methods from ::android::hardware::radio::V1_2::IRadio follow.
     Return<void> setSystemSelectionChannels(
         int32_t serial, bool specifyChannels,
         const hidl_vec<::android::hardware::radio::V1_1::RadioAccessSpecifier>& specifiers) override;
@@ -297,7 +297,7 @@ struct Radio : public IRadio {
 };
 
 }  // namespace implementation
-}  // namespace V1_3
+}  // namespace V1_2
 }  // namespace radio
 }  // namespace hardware
 }  // namespace android
