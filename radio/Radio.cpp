@@ -833,20 +833,6 @@ Return<void> Radio::deactivateDataCall_1_2(
     return Void();
 }
 
-// Methods from ::android::hardware::radio::V1_2::IRadio follow.
-Return<void> Radio::setSystemSelectionChannels(
-    int32_t, bool, const hidl_vec<::android::hardware::radio::V1_1::RadioAccessSpecifier>&) {
-    return Void();
-}
-
-Return<void> Radio::enableModem(int32_t, bool) {
-    return Void();
-}
-
-Return<void> Radio::getModemStackStatus(int32_t) {
-    return Void();
-}
-
 }  // namespace implementation
 }  // namespace V1_2
 }  // namespace radio
