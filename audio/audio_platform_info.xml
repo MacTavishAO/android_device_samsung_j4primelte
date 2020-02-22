@@ -28,409 +28,6 @@
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
     </bit_width_configs>
-    <backend_names>
-        <device name="SND_DEVICE_OUT_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_HAC" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_MUSIC" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_EMERGENCY" interface=""/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_HANDSET_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EX_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EX_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_HAC" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_HAC_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_HAC_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EX_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EX_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HANDSET_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HANDSET_HAC" interface=""/>
-        <device name="SND_DEVICE_OUT_TTY_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_TTY_HANDSET_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_COMM" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_OTHERS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_CHATON" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_CARRIER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_CARRIER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_WEBEX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HANDSET_FMC" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_HANDSET_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_HANDSET_2MIC_ON_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_HANDSET_2MIC_ON" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET_2MIC_ON_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET_2MIC_ON" interface=""/>
-        <device name="SND_DEVICE_OUT_AP_TTY_HANDSET" interface=""/>
-        <device name="SND_DEVICE_OUT_AP_TTY_HANDSET_EX" interface=""/>
-
-        <device name="SND_DEVICE_OUT_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_MUSIC" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EMERGENCY" interface=""/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_COMM" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_OTHERS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CHATON" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_WEBEX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_SPEAKER_FMC" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_OUT_FM_SPEAKER" interface=""/>
-
-        <device name="SND_DEVICE_OUT_HEADPHONES" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_HEADSET_MUSIC" interface=""/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HEADSET_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_HEADSET_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HEADSET_WB" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_HEADSET_EVS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_TTY_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_TTY_FULL" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_COMM" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_OTHERS" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_CHATON" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_CARRIER" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_WEBEX" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_HEADSET_FMC" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_HEADSET_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_HEADSET_DSP" interface=""/>
-        <device name="SND_DEVICE_OUT_LOOPBACK_CP2_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_FM_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_AP_TTY_HEADSET" interface=""/>
-        <device name="SND_DEVICE_OUT_AP_TTY_FULL" interface=""/>
-
-        <device name="SND_DEVICE_OUT_BT_HEADSET" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_BT_HEADSET_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_OTHERS" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_OTHERS" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CHATON" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CHATON" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CALLFORWARDING" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CALLFORWARDING" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_WEBEX" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_WEBEX" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC" backend="bt-sco" interface=""/>
-
-        <device name="SND_DEVICE_OUT_BT_HEADSET_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_OTHERS_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_OTHERS_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CHATON_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CHATON_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CALLFORWARDING_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CALLFORWARDING_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_WEBEX_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_WEBEX_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC_16K" backend="bt-sco-wb" interface=""/>
-
-        <device name="SND_DEVICE_OUT_BT_A2DP" interface=""/>
-
-        <device name="SND_DEVICE_OUT_SPEAKER_RECEIVER" backend="speaker" interface=""/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface=""/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="-and-"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="-and-"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" backend="speaker" interface=""/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_PROXY" backend="speaker" interface=""/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_DOCK" backend="speaker" interface=""/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" backend="speaker" interface=""/>
-
-        <device name="SND_DEVICE_OUT_DOCK" interface=""/>
-        <device name="SND_DEVICE_OUT_HDMI" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_DOCK" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_DOCK_MUSIC" interface=""/>
-        <device name="SND_DEVICE_OUT_VOICE_CALL_FORWARD" interface=""/>
-        <device name="SND_DEVICE_OUT_VIDEO_CALL_DOCK" interface=""/>
-
-        <device name="SND_DEVICE_IN_REC_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_ECHO_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_STEREO_MIC_JAM" interface=""/>
-        <device name="SND_DEVICE_IN_REC_STEREO_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_ECHO_STEREO_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_NS_MIC_INTERVIEW" interface=""/>
-        <device name="SND_DEVICE_IN_REC_NS_MIC_CONVERSATION" interface=""/>
-        <device name="SND_DEVICE_IN_REC_NS_MIC_CONFERENCE" interface=""/>
-        <device name="SND_DEVICE_IN_REC_NS_MIC_MEETING" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_STEREO_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VR_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN1_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN2_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_SVOICE_NS_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_SVOICE_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_SDRIVING_NS_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_HANDSET" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_MAIN_MIC_MUSIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_HANDSET_MUSIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_SPEAKER_MUSIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_MAIN_MIC_EMERGENCY" interface=""/>
-        <device name="SND_DEVICE_IN_VIDEO_CALL_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VIDEO_CALL_NS_MIC_HANDSET" interface=""/>
-        <device name="SND_DEVICE_IN_VIDEO_CALL_NS_MIC_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_MAIN_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_MAIN_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_HANDSET" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_HANDSET_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_HANDSET_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_SPEAKER_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_SPEAKER_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_MAIN_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_MAIN_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_HANDSET" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_HANDSET_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_HANDSET_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_SPEAKER_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_SPEAKER_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_NS_MIC_HANDSET" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_NS_MIC_SPEAKER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_COMM" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_OTHERS" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_CHATON" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_CARRIER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_NS_MIC_HANDSET_CARRIER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_NS_MIC_SPEAKER_CARRIER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_WEBEX" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_MAIN_MIC_FMC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_STEREO_MIC_FOLDERCLOSE" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC_2MIC_ON_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC_2MIC_ON" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC_2MIC_ON_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC_2MIC_ON" interface=""/>
-
-        <device name="SND_DEVICE_IN_REC_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VR_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN1_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN2_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC_MUSIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC_EMERGENCY" interface=""/>
-        <device name="SND_DEVICE_IN_VIDEO_CALL_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_SUB_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_SUB_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_SUB_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_SUB_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_COMM" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_OTHERS" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_CHATON" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_CARRIER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_WEBEX" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_FMC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_SUB_MIC_FOLDERCLOSE" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC_FOLDERCLOSE" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_SUB_MIC_FOLDERCLOSE" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_COMM_FOLDERCLOSE" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_SUB_MIC_OTHERS_FOLDERCLOSE" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_SUB_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_SUB_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_SUB_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_SUB_MIC" interface=""/>
-
-        <device name="SND_DEVICE_IN_REC_3RD_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_3RD_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_3RD_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_3RD_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_3RD_MIC" interface=""/>
-
-        <device name="SND_DEVICE_IN_REC_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HEADSET_MIC_JAM" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VR_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN1_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN1_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN2_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BARGEIN2_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_HEADPHONE_MIC_MUSIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_HEADSET_MIC_MUSIC" interface=""/>
-        <device name="SND_DEVICE_IN_VIDEO_CALL_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VIDEO_CALL_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_HEADPHONE_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_HEADPHONE_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_HEADSET_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_HEADSET_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADPHONE_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADPHONE_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADSET_MIC_WB" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADSET_MIC_EVS" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_TTY_VCO_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_TTY_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_TTY_FULL_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_COMM" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_COMM" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_OTHERS" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_OTHERS" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_CHATON" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_CHATON" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_CARRIER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_CARRIER" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_CALLFORWARDING" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_WEBEX" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_WEBEX" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_FMC" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_FMC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_HEADPHONE_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_HEADSET_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADPHONE_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADSET_MIC_DSP" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADPHONE_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_AP_TTY_VCO_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_AP_TTY_HEADSET_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_AP_TTY_FULL_MIC" interface=""/>
-
-        <device name="SND_DEVICE_IN_REC_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_REC_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VR_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VR_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_OTHERS" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_OTHERS" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CHATON" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CHATON" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CALLFORWARDING" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CALLFORWARDING" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_WEBEX" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_WEBEX" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC" backend="bt-sco" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC" backend="bt-sco" interface=""/>
-
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_OTHERS_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_OTHERS_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CHATON_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CHATON_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_CALLFORWARDING_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CALLFORWARDING_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_WEBEX_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_WEBEX_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC_16K" backend="bt-sco-wb" interface=""/>
-        <device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC_16K" backend="bt-sco-wb" interface=""/>
-
-        <device name="SND_DEVICE_IN_VOICE_CALL_FORWARD_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_FM_INPUT" interface=""/>
-        <device name="SND_DEVICE_IN_CAPTURE_FM" backend="capture-fm" interface=""/>
-        <device name="SND_DEVICE_IN_VOICE_WAKEUP_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_BABYCRY_MIC" interface=""/>
-        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" interface=""/>
-        <device name="SND_DEVICE_IN_THREE_MIC" interface=""/>
-    </backend_names>
-
     <interface_names>
         <device name="AUDIO_DEVICE_IN_BUILTIN_MIC" interface="SLIMBUS_0" codec_type="external"/>
         <device name="AUDIO_DEVICE_IN_BACK_MIC" interface="SLIMBUS_0" codec_type="external"/>
@@ -456,334 +53,113 @@
         <param key="spkr_2_tz_name" value=""/>
     </config_params>
     <acdb_ids>
-		<device name="SND_DEVICE_OUT_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_RECEIVER" acdb_id="14"/>
-		<device name="SND_DEVICE_OUT_HEADPHONES" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_DOCK" acdb_id="98"/>
-		<device name="SND_DEVICE_OUT_HDMI" acdb_id="18"/>
-		<device name="SND_DEVICE_OUT_BT_HEADSET" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_BT_HEADSET_NREC" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="19"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" acdb_id="19"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" acdb_id="18"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_PROXY" acdb_id="20"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_DOCK" acdb_id="98"/>
-		<device name="SND_DEVICE_OUT_BT_HEADSET_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_BT_HEADSET_NREC_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_BT_A2DP" acdb_id="20"/>
-		<device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" acdb_id="14"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_EX" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_HAC" acdb_id="41"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EX" acdb_id="72"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_DOCK" acdb_id="98"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_BT_HEADSET_NREC_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_MUSIC" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_MUSIC" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HEADSET_MUSIC" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_DOCK_MUSIC" acdb_id="98"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_FORWARD" acdb_id="451"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_HANDSET_EMERGENCY" acdb_id="142"/>
-		<device name="SND_DEVICE_OUT_VOICE_CALL_SPEAKER_EMERGENCY" acdb_id="144"/>
-		<device name="SND_DEVICE_OUT_VIDEO_CALL_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VIDEO_CALL_HANDSET_EX" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VIDEO_CALL_SPEAKER_EX" acdb_id="72"/>
-		<device name="SND_DEVICE_OUT_VIDEO_CALL_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VIDEO_CALL_DOCK" acdb_id="98"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_WB" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EVS" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EX" acdb_id="271"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EX_WB" acdb_id="271"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_EX_EVS" acdb_id="271"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_HAC" acdb_id="241"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_HAC_WB" acdb_id="241"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HANDSET_HAC_EVS" acdb_id="241"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_WB" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EVS" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX" acdb_id="272"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_WB" acdb_id="272"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_SPEAKER_EX_EVS" acdb_id="272"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HEADSET_WB" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_HEADSET_EVS" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VOICE_BT_HEADSET_NREC_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_WB" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EVS" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EX" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EX_WB" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HANDSET_EX_EVS" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_WB" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EVS" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX" acdb_id="72"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_WB" acdb_id="72"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_SPEAKER_EX_EVS" acdb_id="72"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HEADSET_WB" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_HEADSET_EVS" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOLTE_VIDEO_BT_HEADSET_NREC_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HANDSET_EX" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HANDSET_HAC" acdb_id="41"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_SPEAKER_EX" acdb_id="72"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOICE_CP2_CALL_BT_HEADSET_NREC_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_TTY_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_TTY_HANDSET_EX" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_TTY_HEADSET" acdb_id="17"/>
-		<device name="SND_DEVICE_OUT_TTY_FULL" acdb_id="17"/>
-		<device name="SND_DEVICE_OUT_VOIP_HANDSET_COMM" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOIP_SPEAKER_COMM" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOIP_HEADSET_COMM" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_COMM_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_COMM_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_VOIP_HANDSET_CARRIER" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOIP_HANDSET_CARRIER_EX" acdb_id="171"/>
-		<device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOIP_SPEAKER_CARRIER_EX" acdb_id="172"/>
-		<device name="SND_DEVICE_OUT_VOIP_HEADSET_CARRIER" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_CARRIER_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_CARRIER_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_VOIP_HANDSET_FMC" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_VOIP_SPEAKER_FMC" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_VOIP_HEADSET_FMC" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC" acdb_id="48"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC" acdb_id="50"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_FMC_16K" acdb_id="60"/>
-		<device name="SND_DEVICE_OUT_VOIP_BT_HEADSET_NREC_FMC_16K" acdb_id="67"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_HANDSET_DSP" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_HANDSET_2MIC_ON_DSP" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER_DSP" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_HEADSET_DSP" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_HANDSET_2MIC_ON" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET_DSP" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET_2MIC_ON_DSP" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER_DSP" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_HEADSET_DSP" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_HANDSET_2MIC_ON" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_LOOPBACK_CP2_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_FM_SPEAKER" acdb_id="15"/>
-		<device name="SND_DEVICE_OUT_FM_HEADSET" acdb_id="10"/>
-		<device name="SND_DEVICE_OUT_FM_USB_HEADPHONES" acdb_id="45"/>
-		<device name="SND_DEVICE_OUT_AP_TTY_HANDSET" acdb_id="7"/>
-		<device name="SND_DEVICE_OUT_AP_TTY_HANDSET_EX" acdb_id="71"/>
-		<device name="SND_DEVICE_OUT_AP_TTY_HEADSET" acdb_id="17"/>
-		<device name="SND_DEVICE_OUT_AP_TTY_FULL" acdb_id="17"/>
-		<device name="SND_DEVICE_IN_REC_MAIN_MIC" acdb_id="4"/>
-		<device name="SND_DEVICE_IN_ECHO_MAIN_MIC" acdb_id="52"/>
-		<device name="SND_DEVICE_IN_REC_SUB_MIC" acdb_id="11"/>
-		<device name="SND_DEVICE_IN_REC_3RD_MIC" acdb_id="421"/>
-		<device name="SND_DEVICE_IN_REC_HEADSET_MIC" acdb_id="8"/>
-		<device name="SND_DEVICE_IN_REC_USB_HEADSET_MIC" acdb_id="44"/>
-		<device name="SND_DEVICE_IN_REC_STEREO_MIC" acdb_id="56"/>
-		<device name="SND_DEVICE_IN_ECHO_STEREO_MIC" acdb_id="55"/>
-		<device name="SND_DEVICE_IN_REC_BT_MIC" acdb_id="49"/>
-		<device name="SND_DEVICE_IN_REC_BT_MIC_NREC" acdb_id="51"/>
-		<device name="SND_DEVICE_IN_REC_NS_MIC_INTERVIEW" acdb_id="135"/>
-		<device name="SND_DEVICE_IN_REC_NS_MIC_CONVERSATION" acdb_id="136"/>
-		<device name="SND_DEVICE_IN_REC_NS_MIC_CONFERENCE" acdb_id="137"/>
-		<device name="SND_DEVICE_IN_REC_NS_MIC_MEETING" acdb_id="138"/>
-		<device name="SND_DEVICE_IN_REC_HIGH_GAIN_MAIN_MIC" acdb_id="109"/>
-		<device name="SND_DEVICE_IN_REC_HIGH_GAIN_SUB_MIC" acdb_id="110"/>
-		<device name="SND_DEVICE_IN_REC_HIGH_GAIN_HEADSET_MIC" acdb_id="113"/>
-		<device name="SND_DEVICE_IN_REC_HIGH_GAIN_STEREO_MIC" acdb_id="114"/>
-		<device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC" acdb_id="111"/>
-		<device name="SND_DEVICE_IN_REC_HIGH_GAIN_BT_MIC_NREC" acdb_id="112"/>
-		<device name="SND_DEVICE_IN_VR_MAIN_MIC" acdb_id="53"/>
-		<device name="SND_DEVICE_IN_VR_SUB_MIC" acdb_id="11"/>
-		<device name="SND_DEVICE_IN_VR_HEADSET_MIC" acdb_id="132"/>
-		<device name="SND_DEVICE_IN_VR_BT_MIC" acdb_id="49"/>
-		<device name="SND_DEVICE_IN_VR_BT_MIC_NREC" acdb_id="51"/>
-		<device name="SND_DEVICE_IN_BARGEIN1_MAIN_MIC" acdb_id="107"/>
-		<device name="SND_DEVICE_IN_BARGEIN1_SUB_MIC" acdb_id="108"/>
-		<device name="SND_DEVICE_IN_BARGEIN1_HEADPHONE_MIC" acdb_id="131"/>
-		<device name="SND_DEVICE_IN_BARGEIN1_HEADSET_MIC" acdb_id="132"/>
-		<device name="SND_DEVICE_IN_BARGEIN2_MAIN_MIC" acdb_id="105"/>
-		<device name="SND_DEVICE_IN_BARGEIN2_SUB_MIC" acdb_id="106"/>
-		<device name="SND_DEVICE_IN_BARGEIN2_HEADPHONE_MIC" acdb_id="133"/>
-		<device name="SND_DEVICE_IN_BARGEIN2_HEADSET_MIC" acdb_id="134"/>
-		<device name="SND_DEVICE_IN_SVOICE_NS_MIC" acdb_id="103"/>
-		<device name="SND_DEVICE_IN_SVOICE_MAIN_MIC" acdb_id="115"/>
-		<device name="SND_DEVICE_IN_SDRIVING_NS_MIC" acdb_id="104"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_MAIN_MIC" acdb_id="4"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC" acdb_id="11"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_HEADPHONE_MIC" acdb_id="420"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_HEADSET_MIC" acdb_id="8"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_HANDSET" acdb_id="34"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_SPEAKER" acdb_id="35"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC" acdb_id="49"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC" acdb_id="51"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_16K" acdb_id="61"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_BT_MIC_NREC_16K" acdb_id="68"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_MAIN_MIC_MUSIC" acdb_id="4"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC_MUSIC" acdb_id="11"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_HEADPHONE_MIC_MUSIC" acdb_id="420"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_HEADSET_MIC_MUSIC" acdb_id="8"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_HANDSET_MUSIC" acdb_id="34"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_NS_MIC_SPEAKER_MUSIC" acdb_id="35"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_FORWARD_MIC" acdb_id="450"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_MAIN_MIC_EMERGENCY" acdb_id="141"/>
-		<device name="SND_DEVICE_IN_VOICE_CALL_SUB_MIC_EMERGENCY" acdb_id="143"/>
-		<device name="SND_DEVICE_IN_VIDEO_CALL_MAIN_MIC" acdb_id="304"/>
-		<device name="SND_DEVICE_IN_VIDEO_CALL_SUB_MIC" acdb_id="311"/>
-		<device name="SND_DEVICE_IN_VIDEO_CALL_HEADPHONE_MIC" acdb_id="320"/>
-		<device name="SND_DEVICE_IN_VIDEO_CALL_HEADSET_MIC" acdb_id="308"/>
-		<device name="SND_DEVICE_IN_VIDEO_CALL_NS_MIC_HANDSET" acdb_id="334"/>
-		<device name="SND_DEVICE_IN_VIDEO_CALL_NS_MIC_SPEAKER" acdb_id="335"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_MAIN_MIC" acdb_id="204"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_MAIN_MIC_WB" acdb_id="204"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_MAIN_MIC_EVS" acdb_id="204"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_SUB_MIC" acdb_id="211"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_SUB_MIC_WB" acdb_id="211"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_SUB_MIC_EVS" acdb_id="211"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_HEADPHONE_MIC" acdb_id="220"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_HEADPHONE_MIC_WB" acdb_id="220"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_HEADPHONE_MIC_EVS" acdb_id="220"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_HEADSET_MIC" acdb_id="208"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_HEADSET_MIC_WB" acdb_id="208"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_HEADSET_MIC_EVS" acdb_id="208"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_HANDSET" acdb_id="234"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_HANDSET_WB" acdb_id="234"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_HANDSET_EVS" acdb_id="234"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_SPEAKER" acdb_id="235"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_SPEAKER_WB" acdb_id="235"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_NS_MIC_SPEAKER_EVS" acdb_id="235"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC" acdb_id="249"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC" acdb_id="251"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_16K" acdb_id="261"/>
-		<device name="SND_DEVICE_IN_VOLTE_VOICE_BT_MIC_NREC_16K" acdb_id="268"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_MAIN_MIC" acdb_id="304"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_MAIN_MIC_WB" acdb_id="304"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_MAIN_MIC_EVS" acdb_id="304"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_SUB_MIC" acdb_id="311"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_SUB_MIC_WB" acdb_id="311"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_SUB_MIC_EVS" acdb_id="311"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADPHONE_MIC" acdb_id="320"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADPHONE_MIC_WB" acdb_id="320"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADPHONE_MIC_EVS" acdb_id="320"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADSET_MIC" acdb_id="308"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADSET_MIC_WB" acdb_id="308"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_HEADSET_MIC_EVS" acdb_id="308"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_HANDSET" acdb_id="334"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_HANDSET_WB" acdb_id="334"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_HANDSET_EVS" acdb_id="334"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_SPEAKER" acdb_id="335"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_SPEAKER_WB" acdb_id="335"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_NS_MIC_SPEAKER_EVS" acdb_id="335"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC" acdb_id="349"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC" acdb_id="351"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_16K" acdb_id="361"/>
-		<device name="SND_DEVICE_IN_VOLTE_VIDEO_BT_MIC_NREC_16K" acdb_id="368"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_MAIN_MIC" acdb_id="4"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_SUB_MIC" acdb_id="11"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_HEADPHONE_MIC" acdb_id="420"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_HEADSET_MIC" acdb_id="8"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_NS_MIC_HANDSET" acdb_id="34"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_NS_MIC_SPEAKER" acdb_id="35"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC" acdb_id="49"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC" acdb_id="51"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_16K" acdb_id="61"/>
-		<device name="SND_DEVICE_IN_VOICE_CP2_CALL_BT_MIC_NREC_16K" acdb_id="68"/>
-		<device name="SND_DEVICE_IN_TTY_VCO_MIC" acdb_id="36"/>
-		<device name="SND_DEVICE_IN_TTY_HEADSET_MIC" acdb_id="16"/>
-		<device name="SND_DEVICE_IN_TTY_FULL_MIC" acdb_id="16"/>
-		<device name="SND_DEVICE_IN_VOIP_MAIN_MIC_COMM" acdb_id="57"/>
-		<device name="SND_DEVICE_IN_VOIP_SUB_MIC_COMM" acdb_id="58"/>
-		<device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_COMM" acdb_id="57"/>
-		<device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_COMM" acdb_id="59"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM" acdb_id="63"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM" acdb_id="62"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_COMM_16K" acdb_id="63"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_COMM_16K" acdb_id="62"/>
-		<device name="SND_DEVICE_IN_VOIP_MAIN_MIC_CARRIER" acdb_id="91"/>
-		<device name="SND_DEVICE_IN_VOIP_SUB_MIC_CARRIER" acdb_id="92"/>
-		<device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_CARRIER" acdb_id="99"/>
-		<device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_CARRIER" acdb_id="93"/>
-		<device name="SND_DEVICE_IN_VOIP_NS_MIC_HANDSET_CARRIER" acdb_id="94"/>
-		<device name="SND_DEVICE_IN_VOIP_NS_MIC_SPEAKER_CARRIER" acdb_id="95"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER" acdb_id="97"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER" acdb_id="96"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_CARRIER_16K" acdb_id="461"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_CARRIER_16K" acdb_id="468"/>
-		<device name="SND_DEVICE_IN_VOIP_MAIN_MIC_FMC" acdb_id="84"/>
-		<device name="SND_DEVICE_IN_VOIP_SUB_MIC_FMC" acdb_id="85"/>
-		<device name="SND_DEVICE_IN_VOIP_HEADPHONE_MIC_FMC" acdb_id="84"/>
-		<device name="SND_DEVICE_IN_VOIP_HEADSET_MIC_FMC" acdb_id="86"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC" acdb_id="90"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC" acdb_id="89"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_FMC_16K" acdb_id="90"/>
-		<device name="SND_DEVICE_IN_VOIP_BT_MIC_NREC_FMC_16K" acdb_id="89"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC_DSP" acdb_id="73"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC_2MIC_ON_DSP" acdb_id="273"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_SUB_MIC_DSP" acdb_id="74"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_3RD_MIC_DSP" acdb_id="75"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_HEADPHONE_MIC_DSP" acdb_id="276"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_HEADSET_MIC_DSP" acdb_id="76"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC" acdb_id="73"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_MAIN_MIC_2MIC_ON" acdb_id="73"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_SUB_MIC" acdb_id="74"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_3RD_MIC" acdb_id="87"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_4TH_MIC" acdb_id="88"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_HEADPHONE_MIC" acdb_id="276"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_HEADSET_MIC" acdb_id="76"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_USB_HEADSET_MIC" acdb_id="500"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC_DSP" acdb_id="73"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC_2MIC_ON_DSP" acdb_id="273"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_SUB_MIC_DSP" acdb_id="74"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_3RD_MIC_DSP" acdb_id="75"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADPHONE_MIC_DSP" acdb_id="276"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADSET_MIC_DSP" acdb_id="76"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC" acdb_id="73"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_MAIN_MIC_2MIC_ON" acdb_id="73"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_SUB_MIC" acdb_id="74"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_3RD_MIC" acdb_id="75"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADPHONE_MIC" acdb_id="276"/>
-		<device name="SND_DEVICE_IN_LOOPBACK_CP2_HEADSET_MIC" acdb_id="76"/>
-		<device name="SND_DEVICE_IN_FM_INPUT" acdb_id="8"/>
-		<device name="SND_DEVICE_IN_CAPTURE_FM" acdb_id="315"/>
-		<device name="SND_DEVICE_IN_VOICE_WAKEUP_MIC" acdb_id="-1"/>
-		<device name="SND_DEVICE_IN_BABYCRY_MIC" acdb_id="-1"/>
-		<device name="SND_DEVICE_IN_AP_TTY_VCO_MIC" acdb_id="36"/>
-		<device name="SND_DEVICE_IN_AP_TTY_HEADSET_MIC" acdb_id="16"/>
-		<device name="SND_DEVICE_IN_AP_TTY_FULL_MIC" acdb_id="16"/>
-		<device name="SND_DEVICE_IN_THREE_MIC" acdb_id="4"/>
-		<device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="56"/>
-		<device name="SND_DEVICE_IN_CAMCORDER_STEREO_MIC" acdb_id="11"/>
-		<device name="SND_DEVICE_IN_CAMCORDER_SUB_MIC" acdb_id="46"/>
-	</acdb_ids>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="136"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" acdb_id="136"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT" acdb_id="136"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED_VBAT" acdb_id="136"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" acdb_id="137"/>
+    </acdb_ids>
 
-    
+    <backend_names>
+        <device name="SND_DEVICE_OUT_HEADPHONES" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_BT_SCO_WB" interface="INT_BT_SCO_RX"/>
+        <device name="SND_DEVICE_OUT_BT_SCO" interface="INT_BT_SCO_RX"/>
+        <device name="SND_DEVICE_OUT_LINE" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_ANC_HEADSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_LINE" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_HANDSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VBAT" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_VBAT" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_VBAT" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_ANC_FB_HEADSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_ANC_FB_HEADSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_ANC_HANDSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED_VBAT" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED_VBAT" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_WSA" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_WSA" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_WSA" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_EXTERNAL" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_AEC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_FLUENCE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_CAMCORDER_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_DMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_QMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_TTY_FULL_HEADSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_TTY_HCO_HEADSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_AANC_HANDSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_QUAD_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_STEREO_DMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_STEREO_DMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" interface="SENARY_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_1" interface="SENARY_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_2" interface="SENARY_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_BROADSIDE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_BROADSIDE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_BROADSIDE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS_BROADSIDE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS_BROADSIDE" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_FLUENCE_DMIC_AANC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_QMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_QMIC_AEC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_QMIC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_QMIC_AEC_NS" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_THREE_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_TMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_TMIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" interface="TERT_MI2S_TX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_HEADPHONES" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_ANC_HEADSET" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="PRI_MI2S_RX-and-INT_BT_SCO_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="PRI_MI2S_RX-and-INT_BT_SCO_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_WSA_AND_BT_SCO" backend="wsa-speaker-and-bt-sco" interface="PRI_MI2S_RX-and-INT_BT_SCO_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_WSA_AND_BT_SCO_WB" backend="wsa-speaker-and-bt-sco-wb" interface="PRI_MI2S_RX-and-INT_BT_SCO_RX"/>
+    </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
         <microphone valid_mask="31" device_id="builtin_mic_1" type="AUDIO_DEVICE_IN_BUILTIN_MIC" address="bottom" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
@@ -1150,31 +526,6 @@
                         <mic_info mic_device_id="builtin_mic_3"
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                         <mic_info mic_device_id="builtin_mic_4"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <!-- Add for Samsung -->
-                    <snd_dev in_snd_device="SND_DEVICE_IN_REC_MAIN_MIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_REC_SUB_MIC">
-                        <mic_info mic_device_id="builtin_mic_2"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_VR_MAIN_MIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_VR_SUB_MIC">
-                        <mic_info mic_device_id="builtin_mic_2"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_CAMCORDER_MIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_CAMCORDER_SUB_MIC">
-                        <mic_info mic_device_id="builtin_mic_2"
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                     </snd_dev>
             </input_snd_device_mic_mapping>
