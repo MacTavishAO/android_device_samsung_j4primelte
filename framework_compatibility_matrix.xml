@@ -73,7 +73,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.radio</name>
-        <version>1.0-2</version>
+        <version>1.0-3</version>
         <interface>
             <name>IRadio</name>
             <instance>slot1</instance>
