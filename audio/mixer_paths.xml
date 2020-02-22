@@ -1262,6 +1262,19 @@
     <!-- ================================================================ -->
     <!-- Voice call Scenario -->
     <!-- RX part -->
+	
+    <path name="voice-speaker">
+        <path name="rcv" />
+        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="EAR PA Gain" value="POS_6_DB" />
+    </path>
+		
+    <path name="voice-headset">
+        <path name="rcv" />
+        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="EAR PA Gain" value="POS_6_DB" />
+    </path>
+	
     <path name="voice-call-handset">
         <path name="rcv" />
         <ctl name="RX1 Digital Volume" value="84" />
